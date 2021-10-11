@@ -1,3 +1,8 @@
+
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
 .input-container {
   display: inline-block;
   align-items:center;
@@ -8,6 +13,11 @@
 .input-box {
   display: inline-block;
   margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
 }
 
 .content-text {
@@ -34,106 +44,110 @@
 .spellName {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
-  width: 150px;
   vertical-align: top;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellEffectContainer {
   display: inline-block;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellCritEffectContainer {
   display: inline-block;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellAP {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellRange {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellAOE {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellModifiable {
   display: inline-block;
-  width:80px;
-  margin-right: 25px;
-  margin-left: 25px;
+  height: 30px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellSight {
   display: inline-block;
-  width:80px;
-  margin-right: 25px;
-  margin-left: 25px;
+  height: 30px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellLinear {
   display: inline-block;
-  width:80px;
-  margin-right: 25px;
-  margin-left: 25px;
+  height: 30px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 .spellCooldown {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellperTurn {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellperTarget {
   display: inline-block;
   height: 30px;
-  margin-right: 25px;
-  margin-left: 25px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellCritChance {
   display: inline-block;
-  width:100px;
-  margin-right: 25px;
-  margin-left: 25px;
+  height: 30px;
   vertical-align: top;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .spellEffect {
   width: auto;
+}
+
+.spellHeader {
+  font-weight: bold
 }
