@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8"/>
   <title>Ascension Stats</title>
@@ -7,7 +9,7 @@
   
 </head>
 
-<body>
+<body onload="updateStats()">
   <p class="content-text">
     Enter the mob's name and floor here.
   </p>
@@ -16,11 +18,18 @@
     Mob:   <input id="mobName" class="input-box" onfocusout="updateMob()">
   </div>
   <div id="floorInputContainer" class="input-container"> 
-    Floor:   <input id="floor" type=number  style="width:50px;" class="input-box" size="2" min=1 max = 100 oninput="updateStats()" />
+    Floor:   <input id="floor" type=number  style="width:50px;" class="input-box" size="2" min=1 max = 100 value=100 oninput="updateStats()" />
+  </div>
+  <div id="actualDamInputContainer">
+    Show Actual Damage:   <input id="actualDamCheckbox" type="checkbox" onchange="updateStats()">
   </div>
   </div>
   <div id="mobInfoContainer" style="width: auto; padding-top: 100px">
     <div id="statContainer" style="display:inline-block; margin-right:100px;" class="stat-display">
+      <div id="mobTitle" class="title" style="margin-left:100px;">Mob Stats
+      </div><br><br>
+      <div>
+      </div>
       <div id="vit" class="stat-container">
         <div id="vitText" class="stat-text">Vitality:
         </div>
@@ -95,7 +104,20 @@
       </div>
     </div>
     <div id="spellsContainer" style="display:inline-block;vertical-align: top;text-align: center;" >
-    </div>
+        <div id="spellsTitle" class="title">Mob Spells</div><div id="spellNameHeader" class="spellHeader spellName">Spell Name
+        </div><div id="spellEffectHeader" class="spellHeader spellEffectContainer">Spell Effect
+        </div><div id="spellCritEffectHeader" class="spellHeader spellCritEffectContainer">Critical Effect
+        </div><div id="spellAPHeader" class="spellHeader spellAP">AP Cost
+        </div><div id="spellRangeHeader" class="spellHeader spellRange">Range
+        </div><div id="spellAOEHeader" class="spellHeader spellAOE">AOE
+        </div><div id="spellModifiableHeader" class="spellHeader spellModifiable">Modifiable Range
+        </div><div id="spellSightHeader" class="spellHeader spellSight">Line of Sight
+        </div><div id="spellLinearHeader" class="spellHeader spellLinear">Linear Only
+        </div><div id="spellCooldownHeader" class="spellHeader spellCooldown">Cooldown
+        </div><div id="spellperTurnHeader" class="spellHeader spellperTurn">Casts/Turn
+        </div><div id="spellperTargetHeader" class="spellHeader spellperTarget">Casts/Target
+        </div><div id="spellCritHeader" class="spellHeader spellCritChance">Crit Chance
+        </div><br></div>
   </div>
 </body>
 </html>
