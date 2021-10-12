@@ -15,7 +15,7 @@
   </p>
   <div id="inputs" style="width: 100%;text-align: center;">
   <div id="mobInputContainer" class="input-container">
-    Mob:   <input id="mobName" class="input-box" onfocusout="updateMob()">
+    Mob:   <input id="mobName" class="input-box" onfocusout="updateStats()">
   </div>
   <div id="floorInputContainer" class="input-container"> 
     Floor:   <input id="floor" type=number  style="width:50px;" class="input-box" size="2" min=1 max = 100 value=100 oninput="updateStats()" />
@@ -24,7 +24,7 @@
     Show Actual Damage:   <input id="actualDamCheckbox" type="checkbox" onchange="updateStats()">
   </div>
   </div>
-  <div id="mobInfoContainer" style="width: auto; padding-top: 100px">
+  <div id="mobInfoContainer" style="transform-origin: top left;width: auto; padding-top: 30px">
     <div id="statContainer" style="display:inline-block; margin-right:100px;" class="stat-display">
       <div id="mobTitle" class="title" style="margin-left:100px;">Mob Stats
       </div><br><br>
@@ -103,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div id="spellsContainer" style="display:inline-block;vertical-align: top;text-align: center;" >
+    <div id="spellsContainer" style="display:inline-block;vertical-align: top;text-align: center;margin-right:100px;" >
         <div id="spellsTitle" class="title">Mob Spells</div><div id="spellNameHeader" class="spellHeader spellName">Spell Name
         </div><div id="spellEffectHeader" class="spellHeader spellEffectContainer">Spell Effect
         </div><div id="spellCritEffectHeader" class="spellHeader spellCritEffectContainer">Critical Effect
