@@ -292,7 +292,7 @@ function addSpell(spellID, spellDivIndex) {
   document.getElementById("spell" + String(spellDivIndex) + "perTarget").textContent = perTarget
 
   spellStatDivCreator("CritChance", spellDivIndex);
-  document.getElementById("spell" + String(spellDivIndex) + "CritChance").textContent = spellArray[spellArrayIndex][13];
+  document.getElementById("spell" + String(spellDivIndex) + "CritChance").textContent = getCritChance(spellArray[spellArrayIndex][13]);
 
 }
   
@@ -325,6 +325,28 @@ function addSpellEffect(effectText, effectIndex) {
   this.appendChild(newDiv);
 
 }
+
+function getCritChance(baseCritStr) {
+
+  var actualDam = document.getElementById("actualDamCheckbox").checked;
+  const floor = document.getElementById("floor").value;
+  var agi = String(statArray[floor-1][4]);
+  
+  if (baseCritStr === "No Crit") { return "-"; }
+
+  if (actualDam) { 
+    
+    var baseCrit = parseInt(baseCritStr.replace("1/",""));
+    var finalCrit = Math.floor(baseCrit*1.1*Math.E/Math.log(parseInt(agi) + 12));
+
+    return "1/" + parseInt(finalCrit);
+
+  }
+
+  return baseCritStr;
+
+}
+
 const statArray = [
 [1,77,20,20,208],
 [2,80,21,22,220],
