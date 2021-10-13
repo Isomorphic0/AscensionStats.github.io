@@ -6,16 +6,17 @@
   <title>Ascension Stats</title>
   <link rel="stylesheet" href="index.css" />
   <script src="StatCalc.js"></script>
+  <script src="autocomplete.js"></script>
   
 </head>
 
-<body onload="updateStats()">
+<body/* onload="updateStats()"*/>
   <p class="content-text">
     Enter the mob's name and floor here.
   </p>
   <div id="inputs" style="width: 100%;text-align: center;">
   <div id="mobInputContainer" class="input-container">
-    Mob:   <input id="mobName" class="input-box" onfocusout="updateStats()">
+    Mob:   <div id="mobInputDirectContainer" stlye="display:display:inline-block;" class="autocomplete"><input id="mobName" class="input-box" onblur="updateStats()"></div>
   </div>
   <div id="floorInputContainer" class="input-container"> 
     Floor:   <input id="floor" type=number  style="width:50px;" class="input-box" size="2" min=1 max = 100 value=100 oninput="updateStats()" />
@@ -119,5 +120,9 @@
         </div><div id="spellCritHeader" class="spellHeader spellCritChance">Crit Chance
         </div><br></div>
   </div>
+<script>
+autocomplete(document.getElementById("mobName"), mobNames);
+updateStats();
+</script>
 </body>
 </html>
