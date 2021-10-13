@@ -201,7 +201,7 @@ function adjustWidths() {
   var r = 1;
   r = Math.min(windowWidth / (width + 505), windowHeight / (height + 100));
   var transformstring = document.getElementById("spellsContainer").style.transform;
-  document.getElementById("mobInfoContainer").style.transform = "scale(" + String(r) + ")";
+  //document.getElementById("mobInfoContainer").style.transform = "scale(" + String(r) + ")";
 
 }
 
