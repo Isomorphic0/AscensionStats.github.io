@@ -1,6 +1,6 @@
 # AscensionStats.github.io
 
-Elemental stats, reduction and parry come from a table construced by testing.
+Elemental stats, reduction and parry come from a table construced by testing. Outside the range of floors 1 to 100, they are extrapolated from a quartic approximation.
 
 Flat Dam is a linear scaling between 50 at level 75, and 850 at level 325.
 
